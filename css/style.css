@@ -51,16 +51,56 @@ button {
   font-family: 'Lato', serif;
   border-radius: 4px;
 }
-/* My UX Skills section coded using CSS flex */
+/* My Skills section */
+.mySkills {
+  padding: 60px 30px;
+}
 .flexContainer {
   display: flex;
 }
 .flexContainer div {
   width: 33%;
+  padding: 30px;
 }
 /* My Work section */
+.myWork {
+  padding: 60px 30px;
+}
 .workGrid {
   display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-areas:
+  "img1 project1"
+  "img2 project2"
+  "img3 project3";
+}
+.workGrid img {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  display: block;
+}
+.img1 {
+  grid-area: img1;
+}
+.img2 {
+  grid-area: img2;
+}
+.img3 {
+  grid-area: img3;
+}
+.img1, .img2, .img3, .project1, .project2, .project3 {
+  padding: 50px;
+}
+.project1 {
+  grid-area: project1;
+}
+.project2 {
+  grid-area: project2;
+}
+.project3 {
+  grid-area: project3;
 }
 footer {
   background-color: #373738;
